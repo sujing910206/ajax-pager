@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="page.css" rel="stylesheet" />
+	<script type="text/javascript" src="jquery.1.8.3.js"></script>
+    <script type="text/javascript" src="js-extend.js"></script>
+	<script type="text/javascript" src="jquery-ajax-pager.js"></script>
+	
+	<script type="text/javascript">
+
+        $(function() {
+            $('#pager').sjAjaxPager({
+                url: "Handler1.ashx",
+                pageSize: 10,
+                searchParam: {
+                    /*
+                    * 如果有其他的查询条件，直接在这里传入即可
+                    */
+                    id: 1,
+                    name:'test'
+                },
+                beforeSend: function () {
+                },
+                success: function (data) {
+                    /*
+                    *返回的数据怎么处理随意
+                    */
+
+                    var tableStr = "<tr><td>Id</td><td>姓名</td><td>年龄</td></tr>";
+                    $.each(data.items, function(i,v) {
+                        tableStr += "<tr><td>" + v.Id + "</td><td>" + v.Name + "</td><td>" + v.Age + "</td></tr>";
+                    });
+
+                    $('#dataTable').html(tableStr);
+                },
+                complete: function () {
+                }
+            });
+        })
+	</script>
+</head>
+<body>
+    
+    <table id="dataTable" border="1px"></table>
+    <div id="pager"></div>
+</body>
+</html>
