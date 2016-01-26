@@ -5,3 +5,10 @@ d:\Users\su_j\Desktop\SjAjaxPagerDemo\SjAjaxPagerDemo\obj\Debug\SjAjaxPagerDemo.
 d:\Users\su_j\Desktop\SjAjaxPagerDemo\SjAjaxPagerDemo\obj\Debug\SjAjaxPagerDemo.dll
 d:\Users\su_j\Desktop\SjAjaxPagerDemo\SjAjaxPagerDemo\obj\Debug\SjAjaxPagerDemo.pdb
 d:\Users\su_j\Desktop\SjAjaxPagerDemo\SjAjaxPagerDemo\bin\Newtonsoft.Json.dll
+d:\Users\su_j\Desktop\ajax-pager\SjAjaxPagerDemo\SjAjaxPagerDemo\bin\SjAjaxPagerDemo.dll.config
+d:\Users\su_j\Desktop\ajax-pager\SjAjaxPagerDemo\SjAjaxPagerDemo\bin\SjAjaxPagerDemo.dll
+d:\Users\su_j\Desktop\ajax-pager\SjAjaxPagerDemo\SjAjaxPagerDemo\bin\SjAjaxPagerDemo.pdb
+d:\Users\su_j\Desktop\ajax-pager\SjAjaxPagerDemo\SjAjaxPagerDemo\bin\Newtonsoft.Json.dll
+d:\Users\su_j\Desktop\ajax-pager\SjAjaxPagerDemo\SjAjaxPagerDemo\obj\Debug\SjAjaxPagerDemo.csprojResolveAssemblyReference.cache
+d:\Users\su_j\Desktop\ajax-pager\SjAjaxPagerDemo\SjAjaxPagerDemo\obj\Debug\SjAjaxPagerDemo.dll
+d:\Users\su_j\Desktop\ajax-pager\SjAjaxPagerDemo\SjAjaxPagerDemo\obj\Debug\SjAjaxPagerDemo.pdb

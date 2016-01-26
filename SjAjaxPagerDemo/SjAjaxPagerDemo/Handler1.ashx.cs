@@ -15,8 +15,8 @@ namespace SjAjaxPagerDemo
         public void ProcessRequest(HttpContext context)
         {
             //这两个参数为固定参数
-            var pageindex = Convert.ToInt32(context.Request["page"]);
-            var pageSize = Convert.ToInt32(context.Request["rows"]);
+            var pageindex = Convert.ToInt32(context.Request["pageIndex"]);
+            var pageSize = Convert.ToInt32(context.Request["pageSize"]);
 
             string response = getDataByIndex(pageindex, pageSize);
 

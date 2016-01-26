@@ -42,10 +42,11 @@
             clearFloatHtml: "<div style='clear:both;'></div>",
             stringEmpty: ""
         },
-        init: function (op) {
+        init: function (obj,op) {
             var _self = this;
 
             _self.opts = $.extend({}, _self.opts, op);
+            _self.pagerElement = obj;
 
             _self.doPage(_self.opts.pageIndex, _self.opts.pageSize, _self.opts.searchParam);
 
@@ -61,8 +62,8 @@
             $.ajax({
                 type: _self.opts.type,
                 data: $.extend(_self.opts.searchParam || {}, {
-                    page: _self.opts.pageIndex,
-                    rows: _self.opts.pageSize || 10
+                    pageIndex: _self.opts.pageIndex,
+                    pageSize: _self.opts.pageSize || 10
                 }),
                 dataType: _self.opts.dataType,
                 url: _self.opts.url,
@@ -210,29 +211,7 @@
     }
 
     $.fn.sjAjaxPager = function (option) {
-
-        var opts = $.extend({}, sjPager.opts, option);
-
-        sjPager.pagerElement = $(this);
-
-        return sjPager.init(opts);
+        return sjPager.init($(this),option);
     };
-
-    /// <summary>辅助方法:格式化字符串</summary>
-    var stringFormat = window.stringFormat = function () {
-
-        if (arguments.length == 0)
-            return null;
-
-        var str = arguments[0];
-
-        for (var i = 1; i < arguments.length; i++) {
-            var reg = new RegExp('\\{' + (i - 1) + '\\}', 'gm');
-
-            str = str.replace(reg, arguments[i]);
-        }
-
-        return str;
-    }
 
 })(window, jQuery);
